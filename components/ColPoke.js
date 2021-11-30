@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Text, TouchableOpacity, StyleSheet, ActivityIndicator, Image } from "react-native";
 
-const ColPoke = ({ item }) => {
+const ColPoke = ({ item, navigation }) => {
   const [PokeDatos, setPokeDatos] = useState();
   const [Load, setLoad] = useState(true);
 
@@ -24,7 +24,7 @@ const ColPoke = ({ item }) => {
   }
 
   return (
-    <TouchableOpacity style={styles.pokelista}>
+    <TouchableOpacity style={styles.pokelista} onPress={()=> navigation.navigate("Pokemon",{Poke: PokeDatos})}>
         <Image style={styles.image}
         source={{uri: PokeDatos.sprites.front_default}}
         />
