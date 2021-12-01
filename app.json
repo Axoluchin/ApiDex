@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "Pokemon",
-    "slug": "Pokemon",
-    "version": "1.0.0",
+    "name": "ApiDex",
+    "slug": "ApiDex",
+    "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1c1c1c"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
